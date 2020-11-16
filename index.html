@@ -1,11 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subway</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <div id="wrap">
+        <header>
+            <div id="title">
+                <div id="logo">
+                    <a href="/">
+                        <img src="./image/logo_w.png" alt="로고">
+                    </a>
+                </div>
+                <div id="util-menu">
+                    <ul>
+                        <li>
+                            <a href="#">로그인</a>
+                        </li>
+                        <li>
+                            <a href="#">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/icon/icon_utill_global.png" alt="지구">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+                <!-- .gnb>ul>li*6>a[href=#]>{메뉴$} -->
+                <div class="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">메뉴소개</a>
+                            <!-- .snb>ul>li*5>a[href=#]>{서브$} -->
+                            <div class="snb">
+                                <ul>
+                                    <li><a href="#">샌드위치</a></li>
+                                    <li><a href="#">랩ㆍ기타</a></li>
+                                    <li><a href="#">찹샐러드</a></li>
+                                    <li><a href="#">스마일썹</a></li>
+                                    <li><a href="#">단체메뉴</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">이용방법</a>
+                            <div class="snb">
+                                <ul>
+                                    <li><a href="#">서브1</a></li>
+                                    <li><a href="#">서브2</a></li>
+                                    <li><a href="#">서브3</a></li>
+                                    <li><a href="#">서브4</a></li>
+                                    <li><a href="#">서브5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">새소식</a></li>
+                        <li><a href="#">써브웨이</a></li>
+                        <li><a href="#">가맹점</a></li>
+                        <li><a href="#">온라인 주문</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="main">
+                <div class="sub-header">
+                    <div class="sub-logo">
+                        <a href="/">
+                            <img src="./image/logo_sub_header.png" alt="서브 로고">
+                        </a>
+                    </div>
+                    <!-- .sub-menu>ul>li*5>a[href=#]>{메뉴$} -->
+                    <div class="sub-menu">
+                        <ul>
+                            <li class="active"><a href="#">샌드위치</a></li>
+                            <li><a href="#">랩ㆍ기타</a></li>
+                            <li><a href="#">찹샐러드</a></li>
+                            <li><a href="#">스마일썹</a></li>
+                            <li><a href="#">단체메뉴</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="top">TOP</a>
+                </div>
+                <div class="banner">
+                    <h2>Sandwich</h2>
+                    <p>전세계 넘버원 브랜드 Subway!<br>50년 전통의 세계 최고의 샌드위치를 맛보세요!</p>
+                    <div class="img"></div>
+                </div>
+            </div>
+            <!-- div#menu-tab>.content>ul>li*6 -->
+            <div id="menu-tab">
+                <div class="content">
+                    <ul>
+                        <li>All</li>
+                        <li>클래식</li>
+                        <li>프레쉬&라이트</li>
+                        <li>프리미엄</li>
+                        <li>아침메뉴</li>
+                        <li>추가 선택</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- #menu>.content>ul -->
+            <div id="menu">
+                <div class="content">
+                    <ul>
+                        <!-- li*4>a>div.label+div.img+strong.ko_title+span.en_title+span.kcal+p.desc+div.icon -->
+                        <li>
+                            <a href="#">
+                                <!-- X : div class="labal" -->
+                                <div class="label">NEW</div>
+                                <div class="img">
+                                    <img src="./image/menu/sandwich_pm15.png" alt="치지 갈릭 미트볼">
+                                </div>
+                                <strong class="ko_title">치지 갈릭 미트볼</strong>
+                                <span class="en_title">Cheesy Garlic Meatbal</span>
+                                <span class="kcal">558 kcal</span>
+                                <p class="desc">마늘향 가득한 부드러운 갈릭버터와<br>써브웨이 비트 미트볼의 만남</p>
+                                <div class="icon"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="label">NEW</div>
+                                <div class="img">
+                                    <img src="./image/menu/sandwich_pm13.jpg" alt="K-비비큐">
+                                </div>
+                                <strong class="ko_title">K-비비큐</strong>
+                                <span class="en_title">K-BBQ</span>
+                                <span class="kcal">378 kcal</span>
+                                <p class="desc">써브웨이 최초의 코리안 스타일 샌드위치!<br>한국식 마늘 그리고 은은한 불맛까지!</p>
+                                <div class="icon"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="label">NEW</div>
+                                <div class="img">
+                                    <img src="./image/menu/sandwich_pm14.jpg" alt="얼터밋">
+                                </div>
+                                <strong class="ko_title">얼터밋</strong>
+                                <span class="en_title">Altermeat</span>
+                                <span class="kcal">427 kcal</span>
+                                <p class="desc">고기없이 고기맛을 낸다고<br>써브웨이에서 제안하는 또다른 특별한 선택!</p>
+                                <div class="icon"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./image/menu/sandwich_pm10.jpg" alt="쉬림프">
+                                </div>
+                                <strong class="ko_title">쉬림프</strong>
+                                <span class="en_title">Shrimp</span>
+                                <span class="kcal">253 kcal</span>
+                                <p class="desc">탱글탱글한 식감이 그대로 살아있는 통새우가<br>5마리 들어가 한 입 베어 먹을 때 마다<br>진짜 새우의 풍미가 가득</p>
+                                <div class="icon"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- <footer></footer> -->
+    </div>
 </body>
+
 </html>
